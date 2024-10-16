@@ -69,6 +69,8 @@ h1 {
     letter-spacing: -1px;
 }
 
+
+
 #bark-better {
     display: flex;
 
@@ -112,6 +114,8 @@ h1 {
     height: 25px;
     padding: 10px;
 }
+
+
 
 .screenshot {
     padding-top: 80px;
@@ -170,6 +174,8 @@ h1 {
     padding-bottom: 80px;
 }
 
+
+
 #free-planContainer {
     display: flex;
     justify-content: center;
@@ -218,6 +224,49 @@ h1 {
 
 .items img {
     height: 15px;
+}
+
+
+
+#every-team {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#every-team h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#every-team p {
+    color: #7f7f7f;
+    padding-bottom: 20px;
+
+    font-weight: 450;
+}
+
+#every-team a {
+    color: #050505;
+    font-weight: 500;
+}
+
+#emoji-container {
+    display: flex;
+    justify-content: center;
+}
+
+.emojiText-boxes {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    text-align: center;
+    padding: 20px;
+}
+
+#product {
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
 }
 
 /* Footer */
