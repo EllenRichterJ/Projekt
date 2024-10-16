@@ -113,6 +113,60 @@ h1 {
     height: 25px;
     padding: 10px;
 }
+
+.screenshot {
+    padding-top: 80px;
+}
+
+.h1-text {
+    width: 50%;
+}
+
+.h1-text p {
+    color: #7f7f7f;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+.screenshot h1 {
+    margin: 0;
+
+    font-size: 45px;
+}
+
+.screenshot h2 {
+    text-align: center;
+    color: #999999;
+    font-size: 36px;
+}
+
+.images {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face p {
+    margin: 0;
+    color: #999999;
+    font-size: 13px;
+}
+
+.face strong {
+    font-size: 15px;
+    font-weight: 450;
+}
+
+.face img {
+    height: 50px;
+    padding-right: 10px;
+}
+
 /* Footer */
 
 footer {
