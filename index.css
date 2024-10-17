@@ -189,12 +189,12 @@ h1 {
     width: 600px;
 }
 
-#free-planText {
+.get-barky-free {
     text-align: center;
     padding-bottom: 60px;
 }
 
-#free-planText p {
+.get-barky-free p {
     color: #7f7f7f;
     padding: 0 20px 10px;
 }
@@ -268,6 +268,59 @@ h1 {
     border-right: 1px solid #e5e5e5;
     border-left: 1px solid #e5e5e5;
 }
+
+
+
+#dogs-love-usContainer {
+    padding: 50px 0;
+}
+
+#dogs-love-us {
+    text-align: center;
+}
+
+#G2 {
+    display: flex;
+
+    padding-bottom: 40px;
+}
+
+#G2 div {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#G2 a {
+    color: #050505;
+}
+
+#percent-container {
+    display: flex;
+}
+
+.percent {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    text-align: center;
+    color: #666666;
+    border-right: 1px solid #e5e5e5;
+}
+
+.percent h1 {
+    font-size: 53px;
+    margin: 0;
+}
+
+.percent p {
+    margin: 0;
+}
+
+#no-border-right {
+    border-right: none;
+}
+
+
 
 /* Footer */
 
