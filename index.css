@@ -192,13 +192,15 @@ main {
 
 .screenshot h1 {
     margin: 0;
+}
+
+.h {
     font-size: var(--fs-h);
 }
 
 .screenshot h2 {
     text-align: center;
     color: var(--clr-quote);
-    font-size: var(--fs-h);
     font-weight: 650;
 }
 
@@ -294,9 +296,7 @@ main {
 }
 
 #every-team h1 {
-    font-size: var(--fs-h);
     margin: 0;
-    font-weight: bold;
 }
 
 #every-team p {
