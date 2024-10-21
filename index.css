@@ -5,7 +5,6 @@
 
 body {
     margin: 0 20px;
-
     font-family: Inter;
 }
 
@@ -20,8 +19,13 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: 1px solid #e5e5e5;
     padding: 10px 0;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+
+    position: fixed;
+    left: 20px;
+    right: 20px;
 }
 
 nav {
@@ -61,6 +65,12 @@ nav {
     padding: 8px 16px;
     font-weight: 550;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#hamburger {
+    padding: 5px;
+    width: 20px;
+    display: none;
 }
 
 .get-free:hover {
@@ -356,8 +366,13 @@ footer {
 #footer-container {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
-    flex-basis: 0;
+    gap: 80px;
+}
+
+#info-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
 
     max-width: 1200px;
 }
@@ -368,11 +383,11 @@ footer {
     justify-content: space-between;
 
     box-sizing: border-box;
-    padding: 0 20px;
 }
 
-#barky-container p {
-    margin-bottom: 20px;
+#barky-container p,
+.info {
+    font-size: 14px;
 }
 
 #logo2 {
@@ -401,4 +416,60 @@ footer {
     text-decoration: underline;
 }
 
-/* 
+/* 600px */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .nav-items,
+    nav a {
+        display: none;
+    }
+
+    #hamburger {
+        display: inline;
+    }
+
+    /* Main */
+
+    #bark-better {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .screenshot {
+        text-align: center;
+    }
+
+    .h1-text {
+        width: 100%;
+    }
+
+    .screenshot h2 {
+        font-size: 26px;
+    }
+
+    #emoji-container {
+        flex-direction: column;
+    }
+
+    #percent-container,
+    #G2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Footer */
+
+    #footer-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #info-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0;
+    }
+}
