@@ -5,14 +5,14 @@
 
 :root {
     --clr-bg-text: white;
-    --clr-border-hover: #e5e5e5;
+    --clr-border: #e5e5e5;
     --button-hover: #353535;
     --button-bg: #050505;
     --button-shadow: rgba(0, 0, 0, 0.2);
     --clr-p: #7f7f7f;
     --clr-quote: #999999;
     --img-shadow: rgba(0, 0, 0, 0.1);
-    --bg-list: #f4f4f4;
+    --bg-list-hover: #f4f4f4;
     --clr-list-text: #666666;
     --clr-link: #121212;
     --link-hover: #087fe7;
@@ -48,7 +48,7 @@ header {
 
     padding: 10px 0;
     background-color: var(--clr-bg-text);
-    border-bottom: 1px solid var(--clr-border-hover);
+    border-bottom: 1px solid var(--clr-border);
 
     position: fixed;
     left: 20px;
@@ -82,7 +82,7 @@ nav {
 }
 
 #demo {
-    border-right: 1px solid var(--clr-border-hover);
+    border-right: 1px solid var(--clr-border);
     padding-right: 10px;
 }
 
@@ -111,7 +111,95 @@ nav .get-free {
 }
 
 .nav-items:hover {
-    background-color: var(--clr-border-hover);
+    background-color: var(--bg-list-hover);
+}
+
+.nav-arrows {
+    position: relative;
+}
+
+.dropdownmenu {
+    position: absolute;
+    display: none;
+
+    background-color: var(--clr-bg-text);
+    box-shadow: 0 0 20px var(--img-shadow);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dropdownmenu a {
+    display: block;
+
+    color: var(--clr-link);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: var(--fs-nav-p);
+    font-weight: 450;
+}
+
+#dropdownmenu1 {
+    width: 300px;
+}
+
+#dropdownmenu1 strong {
+    font-weight: 400;
+}
+
+#dropdownmenu1 p {
+    margin: 0;
+    color: var(--clr-p);
+    font-size: var(--fs-footer-p);
+}
+
+#dropdownmenu1 a {
+    display: flex;
+    gap: 10px;
+}
+
+#dropdownmenu1 img {
+    height: 20px;
+    border: 1px solid var(--clr-border);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--clr-bg-text);
+}
+
+.dropdownmenu2-3 {
+    width: 150px;
+}
+
+#dropdownmenu4 {
+    width: 200px;
+}
+
+#dropdownmenu4 p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--clr-p);
+    font-size: var(--fs-nav-p);
+}
+
+#your-browser {
+    display: inline;
+
+    text-decoration: underline;
+    padding: 0;
+    color: var(--clr-p);
+}
+
+.dropdownmenu a:hover {
+    background-color: var(--bg-list-hover);
+}
+
+#dropdownmenu4 p:hover {
+    background-color: var(--bg-list-hover);
+}
+
+.nav-arrows:hover .dropdownmenu {
+    display: block;
 }
 
 /* Main */
@@ -162,8 +250,8 @@ main {
 }
 
 #company-logos {
-    border-top: 1px solid var(--clr-border-hover);
-    border-bottom: 1px solid var(--clr-border-hover);
+    border-top: 1px solid var(--clr-border);
+    border-bottom: 1px solid var(--clr-border);
 
     padding: 20px;
     text-align: center;
@@ -242,8 +330,8 @@ main {
     display: flex;
     justify-content: center;
 
-    border-top: 1px solid var(--clr-border-hover);
-    border-bottom: 1px solid var(--clr-border-hover);
+    border-top: 1px solid var(--clr-border);
+    border-bottom: 1px solid var(--clr-border);
     padding: 80px 0;
 }
 
@@ -262,7 +350,7 @@ main {
 }
 
 #list {
-    background-color: var(--bg-list);
+    background-color: var(--bg-list-hover);
     color: var(--clr-list-text);
 
     padding: 20px;
@@ -273,7 +361,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: 1px solid var(--clr-border-hover);
+    border-bottom: 1px solid var(--clr-border);
 }
 
 #black {
@@ -329,8 +417,8 @@ main {
 }
 
 #product {
-    border-right: 1px solid var(--clr-border-hover);
-    border-left: 1px solid var(--clr-border-hover);
+    border-right: 1px solid var(--clr-border);
+    border-left: 1px solid var(--clr-border);
 }
 
 
@@ -366,7 +454,7 @@ main {
 .percent {
     text-align: center;
     color: var(--clr-list-text);
-    border-right: 1px solid var(--clr-border-hover);
+    border-right: 1px solid var(--clr-border);
 }
 
 .percent h1 {
@@ -389,7 +477,7 @@ footer {
     display: flex;
     justify-content: center;
 
-    border-top: 1px solid var(--clr-border-hover);
+    border-top: 1px solid var(--clr-border);
     padding: 80px 0;
 }
 
@@ -461,10 +549,6 @@ footer {
     }
 
     /* Main */
-
-    #bark-better img {
-        max-width: 60%;
-    }
 
     #bark-better {
         flex-direction: column-reverse;
