@@ -596,6 +596,10 @@ footer {
         gap: 0 300px;
 
     }
+
+    #logo-shares {
+        margin-bottom: 20px;
+    }
 }
 
 /* 600px */
@@ -671,5 +675,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 0;
+    }
+
+    #logo-shares {
+        margin-bottom: 0;
     }
 }
