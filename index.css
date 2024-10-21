@@ -42,6 +42,8 @@ nav {
 .nav-items p {
     margin: 0;
     padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .nav-items {
@@ -65,6 +67,10 @@ nav {
     padding: 8px 16px;
     font-weight: 550;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav .get-free {
+    font-size: 14px;
 }
 
 #hamburger {
@@ -92,10 +98,7 @@ main {
 
 #container {
     max-width: 1000px;
-}
-
-h1 {
-    letter-spacing: -1px;
+    width: 100%;
 }
 
 
@@ -103,7 +106,8 @@ h1 {
 #bark-better {
     display: flex;
 
-    padding: 50px 0;
+    padding: 80px 0;
+    margin-top: 60px;
 }
 
 #bark-better div {
@@ -117,7 +121,6 @@ h1 {
     margin: 0;
 
     font-size: 45px;
-    font-weight: bold;
     line-height: 1.0;
 }
 
@@ -151,7 +154,7 @@ h1 {
 }
 
 .h1-text {
-    width: 50%;
+    width: 48%;
 }
 
 .h1-text p {
@@ -162,14 +165,14 @@ h1 {
 
 .screenshot h1 {
     margin: 0;
-
-    font-size: 45px;
+    font-size: 36px;
 }
 
 .screenshot h2 {
     text-align: center;
     color: #999999;
     font-size: 36px;
+    font-weight: 650;
 }
 
 .images {
@@ -186,7 +189,8 @@ h1 {
 .face p {
     margin: 0;
     color: #999999;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 320;
 }
 
 .face strong {
@@ -271,7 +275,6 @@ h1 {
 #every-team p {
     color: #7f7f7f;
     padding-bottom: 20px;
-
     font-weight: 450;
 }
 
@@ -292,6 +295,10 @@ h1 {
 .emojiText-boxes {
     text-align: center;
     padding: 20px;
+}
+
+.emojiText-boxes h2 {
+    font-size: 24px;
 }
 
 #product {
@@ -342,6 +349,7 @@ h1 {
 
 .percent p {
     margin: 0;
+    font-size: 18px;
 }
 
 #no-border-right {
@@ -380,9 +388,8 @@ footer {
     box-sizing: border-box;
 }
 
-#barky-container p,
-.info {
-    font-size: 14px;
+#barky-container p {
+    font-size: 13px;
 }
 
 #logo2 {
@@ -399,6 +406,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-size: 13.5px;
 }
 
 .info a {
@@ -424,6 +432,11 @@ footer {
 
     #hamburger {
         display: inline;
+    }
+
+    header,
+    #product {
+        border: none;
     }
 
     /* Main */
@@ -461,6 +474,10 @@ footer {
     }
 
     /* Footer */
+
+    footer {
+        justify-content: start;
+    }
 
     #footer-container {
         flex-direction: column;
