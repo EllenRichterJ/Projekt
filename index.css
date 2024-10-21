@@ -285,14 +285,11 @@ h1 {
 }
 
 #emoji-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .emojiText-boxes {
-    flex-grow: 1;
-    flex-basis: 0;
-
     text-align: center;
     padding: 20px;
 }
@@ -328,13 +325,11 @@ h1 {
 }
 
 #percent-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .percent {
-    flex-grow: 1;
-    flex-basis: 0;
-
     text-align: center;
     color: #666666;
     border-right: 1px solid #e5e5e5;
@@ -451,13 +446,18 @@ footer {
     }
 
     #emoji-container {
-        flex-direction: column;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 
-    #percent-container,
+    #percent-container {
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
     #G2 {
         flex-direction: column;
-        gap: 20px;
     }
 
     /* Footer */
