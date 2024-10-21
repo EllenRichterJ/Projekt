@@ -31,7 +31,7 @@
 }
 
 body {
-    margin: 0 20px;
+    margin: 0 40px;
     font-family: Inter;
 }
 
@@ -262,7 +262,7 @@ main {
 }
 
 #list {
-    background-color: var(--bg-list-bg-list);
+    background-color: var(--bg-list);
     color: var(--clr-list-text);
 
     padding: 20px;
@@ -444,6 +444,68 @@ footer {
 
 .info a:hover {
     text-decoration: underline;
+}
+
+/* 1080px */
+
+@media (max-width: 1080px) {
+
+    /* Header */
+
+    .nav-items {
+        display: none;
+    }
+
+    #hamburger {
+        display: inline;
+    }
+
+    /* Main */
+
+    #bark-better img {
+        max-width: 60%;
+    }
+
+    #bark-better {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #emoji-container,
+    #percent-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #percent-container {
+        gap: 40px 0;
+    }
+
+    #product {
+        border: none;
+    }
+
+    .percent {
+        border: none
+    }
+
+    /* Footer */
+
+    footer {
+        justify-content: start;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #info-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0 300px;
+
+    }
 }
 
 /* 600px */
