@@ -16,6 +16,18 @@
     --clr-list-text: #666666;
     --clr-link: #121212;
     --link-hover: #087fe7;
+
+    --fs-percent: 53px;
+    --fs-big-h1: 45px;
+    --fs-h: 35px;
+    --fs-quote: 26px;
+    --fs-emoji: 24px;
+    --fs-big-p: 18px;
+    --fs-name: 15px;
+    --fs-nav-p: 14px;
+    --fs-footer-links: 13.5px;
+    --fs-footer-p: 13px;
+    --fs-name-title: 12px;
 }
 
 body {
@@ -57,7 +69,7 @@ nav {
 .nav-items p {
     margin: 0;
     padding: 5px;
-    font-size: 14px;
+    font-size: var(--fs-nav-p);
     font-weight: 400;
 }
 
@@ -85,7 +97,7 @@ nav {
 }
 
 nav .get-free {
-    font-size: 14px;
+    font-size: var(--fs-nav-p);
 }
 
 #hamburger {
@@ -135,13 +147,13 @@ main {
 #bark-better h1 {
     margin: 0;
 
-    font-size: 45px;
+    font-size: var(--fs-big-h1);
     line-height: 1.0;
 }
 
 #bark-better p {
     color: var(--clr-p);
-    font-size: 18px;
+    font-size: var(--fs-big-p);
 }
 
 #bark-better .get-free {
@@ -180,13 +192,13 @@ main {
 
 .screenshot h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: var(--fs-h);
 }
 
 .screenshot h2 {
     text-align: center;
     color: var(--clr-quote);
-    font-size: 36px;
+    font-size: var(--fs-h);
     font-weight: 650;
 }
 
@@ -204,12 +216,12 @@ main {
 .face p {
     margin: 0;
     color: var(--clr-p);
-    font-size: 12px;
+    font-size: var(--fs-name-title);
     font-weight: 320;
 }
 
 .face strong {
-    font-size: 15px;
+    font-size: var(--fs-name);
     font-weight: 450;
 }
 
@@ -243,7 +255,7 @@ main {
 }
 
 .get-barky-free p {
-    color: var (var(--clr-p));
+    color: var(--clr-p);
     padding: 0 20px 10px;
 }
 
@@ -282,7 +294,7 @@ main {
 }
 
 #every-team h1 {
-    font-size: 36px;
+    font-size: var(--fs-h);
     margin: 0;
     font-weight: bold;
 }
@@ -313,7 +325,7 @@ main {
 }
 
 .emojiText-boxes h2 {
-    font-size: 24px;
+    font-size: var(--fs-emoji);
 }
 
 #product {
@@ -353,18 +365,18 @@ main {
 
 .percent {
     text-align: center;
-    color: var(--clr-list-percent);
+    color: var(--clr-list-text);
     border-right: 1px solid var(--clr-border-hover);
 }
 
 .percent h1 {
-    font-size: 53px;
+    font-size: var(--fs-percent);
     margin: 0;
 }
 
 .percent p {
     margin: 0;
-    font-size: 18px;
+    font-size: var(--fs-big-p);
 }
 
 #no-border-right {
@@ -404,7 +416,7 @@ footer {
 }
 
 #barky-container p {
-    font-size: 13px;
+    font-size: var(--fs-footer-p);
 }
 
 #logo2 {
@@ -421,7 +433,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 13.5px;
+    font-size: var(--fs-footer-links);
 }
 
 .info a {
@@ -470,7 +482,7 @@ footer {
     }
 
     .screenshot h2 {
-        font-size: 26px;
+        font-size: var(--fs-quote);
     }
 
     #emoji-container {
